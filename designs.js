@@ -4,9 +4,11 @@
 // When size is submitted by the user, call makeGrid()
 
 function makeGrid() {
-    const gridHeight = document.getElementById("inputHeight").value;
-    const gridWidth = document.getElementById("inputWidth").value;
-    const container = document.getElementById("pixel_canvas");
+    const gridHeight = document.getElementById('inputHeight').value;
+    const gridWidth = document.getElementById('inputWidth').value;
+    const container = document.getElementById('pixel_canvas');
+
+    container.innerHTML = '';
 
     for(let i = 0; i < gridHeight; i++ ) {
         let row = container.insertRow(i);
